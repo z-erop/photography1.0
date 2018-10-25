@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>失败弹窗</title>
+		<style>
+            .div-box{
+                width: 706px;
+                height: 258px;
+                border: 0 0 1px 0;
+                position: absolute;
+                left: -5px;
+                box-shadow: 4px 2px 4px 0px 
+	        	rgba(0, 0, 0, 0.1);
+            }
+			.reject-content{
+				height: 200px;
+				width: 100%;
+                /* margin: 50px auto; */
+                text-align: center;
+            }
+            .reject-content span{
+                display: block;
+                text-align: left;
+                color: #666666;
+                margin: 20px 0 10px 50px;
+            }
+			.reject-content textarea{
+				padding: 10px;
+				height: 148px;
+                width: 580px;
+                color: #999999;
+                border-radius: 5px;
+                font-size: 14px;
+                border: solid 1px #eeeeee;
+			}
+			.reject-content textarea{
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+        <div class="div-box">
+            <div class="reject-content">
+                <span >失败原因：</span>
+                <textarea placeholder="填写失败原因" id="reason"></textarea>
+            </div>
+        </div>
+	</body>
+</html>

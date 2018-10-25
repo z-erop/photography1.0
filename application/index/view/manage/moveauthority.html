@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>移动菜单弹窗</title>
+    <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="__PUBLIC__/static/index/css/manage/moveauthority.css">
+</head>
+
+<body>
+    <div class="top-box" id="wrap">
+        <form class="layui-form" id="form" lay-filter="form">
+            {:token()}
+                <div class="layui-form-item content-div">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">父级权限:</label>
+                        <div class="layui-input-inline" style="width: 350px;">
+                            <select name="pid" required lay-verify="required">
+                                <option value="0" >一级菜单</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="text-align:center;">
+                    <div class="buttom-box">
+                        <button class="quxiao">  取消 </button>
+                        <button class="queren" lay-submit lay-filter="sub_btn"> 确定 </button>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/manage/moveauthority.js"></script>

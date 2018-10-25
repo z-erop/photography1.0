@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>团队管理</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/team/teammanage.css"/>
+</head>
+<style>
+.layui-form-label{
+	font-size: 16px;
+}
+</style>
+<body>
+ <!--导航部分-->
+<!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	<div class="left-nav">
+ 		<ul>
+ 			<li><a href="{:url('index/test/teammanage');}">团队管理</a></li>
+ 			<li><a href="{:url('index/test/addpeople');}">添加人员</a></li>
+ 		</ul>
+	 </div>
+	<!--左侧导航结束-->
+ 	<div class="right-content">
+		 <div class="content-top-div">
+			<span class="type-span">职&nbsp;务:</span> 
+			<div class="type-right-div">
+				<div class="type-right-div1">
+					<ul>
+						<li style="color:#ff4d7d;">全部</li>
+						<li>摄影师</li>
+						<li>策划师</li>
+						<li>灯光师</li>
+						<li>主持人</li>
+						<li>视频剪辑师</li>
+						<li>平面设计师</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		 
+ 		<div class="content-bottom-div">
+			
+			<div class="works-top ">
+				<span class="works-count">共5人</span>
+				
+				<div class="search-div">
+					<!-- <img class="search-ico" src="__INDEX__/index/images/search.png" alt=""> -->
+					<div class="hidden-search">
+						<input class="search-input layui-input1" type="text" placeholder="标题/设计者"><img class="search-img" src="__INDEX__/index/images/search_movein.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="works-div-box">
+
+				<div class="item-box">
+					<div class="item-img">
+						<img src="__INDEX__/index/images/th (1).jpeg" alt="">
+					</div>
+					<div class="item-info">
+						<div class="item-info-left">
+							<img class="user-pic" src="__INDEX__/index/images/th (3).jpeg" alt="">
+							<span class="user-name">河冰</span>
+							<span class="authod_z">策划师 <span class="authod_sex">男</span></span>
+							<span class="authod_js">个人描述或励志宣言个人描述或励志宣言个人描述或励志宣言个人描述或励志宣言个人描述或励志宣</span>
+						</div>
+						
+					</div>
+					<div class="item-buttom">
+						<span class="change-msg">修改</span>
+						<span class="delete">删除</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+ 	</div>
+ 
+ </div>
+ 
+<script>
+var changetmsg = "{:url('index/test/changetmsg');}";  //修改团队成员信息跳转
+var deletenotice = "{:url('index/test/deletenotice');}";  //删除提示弹窗
+</script>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/team/teammanage.js"></script>
+</body>
+</html>

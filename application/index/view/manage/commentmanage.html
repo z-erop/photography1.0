@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>评论管理</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage_nav.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage/commentmanage.css"/>
+</head>
+<style>
+
+.layui-form-label{
+	font-size: 16px;
+}
+.layui-input{
+    background-color: #f8f8f9;
+	border-radius: 5px;
+	border: solid 1px #eeeeee;
+}
+.layui-form-select dl dd.layui-this{
+     background-color: #fcae14; 
+}
+
+</style>
+<body>
+ <!--导航部分-->
+<!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	{include file="../application/index/view/Public/manage_nav.html" /}
+    <!--左侧导航结束-->
+    
+ 	<div class="right-content">
+        <div class="r-content1">
+            <span> <a style="color: #ff4d7d;" href="{:url('index/test/addpeople');}">评论审核</a> </span>
+            <!-- <span><a href="{:url('index/test/worksdraft');}">草稿</a></span> -->
+        </div>
+        <div class="r-content2 ">
+            <div class="r-content2-title">
+                <div class="layui-inline ">
+                        <span style="color: #666666;font-size:16px;">评论时间：</span>
+                    <div class="layui-input-inline" >
+                        <input type="text" style="height:32px;" name="title" lay-verify="" id="chose_time" autocomplete="off" placeholder="选择时间" class="layui-input">
+                    </div>
+                </div>
+            </div> 
+
+            <div class="comment-box">
+                <!-- 新消息 盒子 -->
+                <div class="new-comment-box">
+                    <div class="n-comment-item">
+                        <div class="msgbox1">
+                            <div class="msgbox1-l">
+                                <div class="u-coment-div1">
+                                    <div class="u-comment-l" >
+                                        <div class="user-pic">
+                                            <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                        </div>
+                                        <div class="user-msg">
+                                            <span class="user-p">182********</span>
+                                            <span class="msg-time">2018-10-18 <span class="type-s">西式教堂婚礼</span>   </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-comment-r"></div>
+                                </div>
+                                <div class="u-comment-div2">
+                                        为新人提供婚礼流程创意策划、进行婚礼现场监督等，帮助新人在婚礼中完成他们梦想的核心执行人员。
+                                        根据婚礼新人和婚礼服务公司的要求，能独立策划婚礼方案，并能准确地监督策划方案实施的全过程的策划者。
+                                        婚礼策划师的主要工作是根据客户的具体情况作出个性化的安排，策划实施婚礼方案并对整场婚礼进行现场监督。
+                                </div>
+                                <div class="u-comment-div3">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="msgbox1-r">
+                                <span class="no-rep-ico-span">
+                                    <img class="yun-ico" src="__INDEX__/index/images/cloudsynchronization.png" alt="">
+                                    <img class="reply-ico" src="__INDEX__/index/images/reply.png" alt="">
+                                    <img class="delete-ico" src="__INDEX__/index/images/delectcomments.png" alt="">
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="rep-msgbox">
+                            <div class="rep-box">
+                                <div class="rep-msg-c">
+                                    <span style="color:#ff4d7d">[掌柜回复]</span>
+                                    为新人提供婚礼流程创意策划、进行婚礼现场监督等，帮助新人在婚礼中完成他们梦想的核心执行人员。
+                                </div>
+                                <div class="rep-msg-r">
+                                    <span class="no-rep-ico-span">
+                                        <img class="yun-ico" src="__INDEX__/index/images/cloudsynchronization.png" alt="">
+                                        <img class="reply-ico" src="__INDEX__/index/images/reply.png" alt="">
+                                        <img class="delete-ico" src="__INDEX__/index/images/delectcomments.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                       
+                    <div class="n-comment-item">
+                        <div class="msgbox1">
+                            <div class="msgbox1-l">
+                                <div class="u-coment-div1">
+                                    <div class="u-comment-l" >
+                                        <div class="user-pic">
+                                            <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                        </div>
+                                        <div class="user-msg">
+                                            <span class="user-p">182********</span>
+                                            <span class="msg-time">2018-10-18 <span class="type-s">西式教堂婚礼</span>   </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-comment-r"></div>
+                                </div>
+                                <div class="u-comment-div2">
+                                        为新人提供婚礼流程创意策划、进行婚礼现场监督等，帮助新人在婚礼中完成他们梦想的核心执行人员。
+                                        根据婚礼新人和婚礼服务公司的要求，能独立策划婚礼方案，并能准确地监督策划方案实施的全过程的策划者。
+                                        婚礼策划师的主要工作是根据客户的具体情况作出个性化的安排，策划实施婚礼方案并对整场婚礼进行现场监督。
+                                </div>
+                                <div class="u-comment-div3">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="msgbox1-r">
+                                <span class="no-rep-ico-span">
+                                    <img class="yun-ico" src="__INDEX__/index/images/cloudsynchronization.png" alt="">
+                                    <img class="reply-ico" src="__INDEX__/index/images/reply.png" alt="">
+                                    <img class="delete-ico" src="__INDEX__/index/images/delectcomments.png" alt="">
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="rep-msgbox" style="display:none" >
+                            <div class="rep-box">
+                                <div class="rep-msg-c">
+                                    <span style="color:#ff4d7d">[掌柜回复]</span>
+                                    为新人提供婚礼流程创意策划、进行婚礼现场监督等，帮助新人在婚礼中完成他们梦想的核心执行人员。
+                                </div>
+                                <div class="rep-msg-r">
+                                    <span class="no-rep-ico-span">
+                                        <img class="yun-ico" src="__INDEX__/index/images/cloudsynchronization.png" alt="">
+                                        <img class="reply-ico" src="__INDEX__/index/images/reply.png" alt="">
+                                        <img class="delete-ico" src="__INDEX__/index/images/delectcomments.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+
+
+                </div>
+
+                <div style="text-align: center;font-size: 16px;color: #999999;height: 50px;"> ........ 历史记录 ........</div>
+                <!-- 历史消息 盒子 -->
+                <div class="history-comment-div">
+                   
+                    <div class="n-comment-item">
+                        <div class="msgbox1">
+                            <div class="msgbox1-l">
+                                <div class="u-coment-div1">
+                                    <div class="u-comment-l" >
+                                        <div class="user-pic">
+                                            <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                        </div>
+                                        <div class="user-msg">
+                                            <span class="user-p">182********</span>
+                                            <span class="msg-time">2018-10-18 <span class="type-s">西式教堂婚礼</span>   </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-comment-r"></div>
+                                </div>
+                                <div class="u-comment-div2">
+                                        为新人提供婚礼流程创意策划、进行婚礼现场监督等，帮助新人在婚礼中完成他们梦想的核心执行人员。
+                                        根据婚礼新人和婚礼服务公司的要求，能独立策划婚礼方案，并能准确地监督策划方案实施的全过程的策划者。
+                                        婚礼策划师的主要工作是根据客户的具体情况作出个性化的安排，策划实施婚礼方案并对整场婚礼进行现场监督。
+                                </div>
+                                <div class="u-comment-div3">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                    <img src="__INDEX__/index/images/th (1).jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="msgbox1-r">
+                                <span class="no-rep-ico-span">
+                                    <img class="yun-ico" src="__INDEX__/index/images/cloudsynchronization.png" alt="">
+                                    <img class="reply-ico" src="__INDEX__/index/images/reply.png" alt="">
+                                    <img class="delete-ico" src="__INDEX__/index/images/delectcomments.png" alt="">
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="reply-msgbox" style="display:none;" >
+                            <div class="rep-box">
+                                <div class="rep-msg-c">
+                                    <div class="reply-c-box">
+                                        <div class="rep-textarea">
+                                            <textarea name="" placeholder="输入你的回复......"></textarea>
+                                        </div>
+                                        <div class="rep-btn-box">
+                                            <button class="cancel">取消</button>
+                                            <button class="queren">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+                    
+            </div>
+            
+
+        </div>
+
+ 	</div>
+ 
+ </div>
+
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/manage/commentmanage.js"></script>
+</body>
+</html>

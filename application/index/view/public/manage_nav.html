@@ -1,0 +1,29 @@
+
+<div class="left-nav">
+    <ul>
+        <li><a href="{:url('index/test/usermanage');}">用户管理</a></li>
+        <li><a href="{:url('index/test/dutiesmanage');}">职务管理</a></li>
+        <li><a href="{:url('index/test/commentmanage');}">审核管理</a></li>
+        <li><a href="{:url('index/test/accountmanage');}">账号管理(管理员)</a></li>
+        <li><a href="{:url('index/test/authoritymanage');}">权限管理(管理员)</a></li>
+    </ul>
+</div>
+<script src="__PUBLIC__/static/lib/jquery-1.9.1.min.js"></script>
+<script>
+    
+    $(document).on('click','.left-nav>ul>li',function(){
+     
+        if($(this).children().html()=='用户管理'){
+            window.location.href = "{:url('index/test/usermanage');}"
+        }else if($(this).children().html()=='职务管理'){
+            window.location.href = "{:url('index/test/dutiesmanage');}"
+        }else if($(this).children().html()=='审核管理'){
+            window.location.href = "{:url('index/test/commentmanage');}"
+        }else if($(this).children().html()=='账号管理(管理员)'){
+            window.location.href = "{:url('index/test/accountmanage');}"
+        }else{
+            window.location.href = "{:url('index/test/authoritymanage');}"
+        }
+        
+    })
+</script>

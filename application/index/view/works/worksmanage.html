@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>作品管理</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/works/worksmanage.css"/>
+</head>
+<style>
+.layui-form-label{
+	font-size: 16px;
+}
+.layui-form-select dl dd.layui-this{
+     background-color: #fcae14; 
+}
+</style>
+<body>
+ <!--导航部分-->
+<!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	<div class="left-nav">
+ 		<ul>
+ 			<li><a href="{:url('index/test/worksmanage');}">作品管理</a></li>
+ 			<li><a href="{:url('index/test/uploadworks');}">上传作品</a></li>
+ 		</ul>
+	 </div>
+	<!--左侧导航结束-->
+ 	<div class="right-content">
+		 <div class="content-top-div">
+			<span class="type-span">类&nbsp;型:</span> 
+			<div class="type-right-div">
+				<div class="type-right-div1">
+					<ul class="ul-type">
+						<li class="ul-li-video" style="color:#ff4d7d;">影视文化</li>
+						<li class="ul-li-active">活动策划</li>
+						<li class="ul-li-sheji">品牌设计</li>
+					</ul>
+				</div>
+				<div class="type-right-div2">
+					<ul class="ul-typechild">
+						<li style="color:#ff4d7d;">全部</li>
+						<li>楼盘代理拍摄</li>
+						<li>个人宣传片</li>
+						<li>企业宣传片</li>
+						<li>微电影</li>
+						<li>婚纱照</li>
+						<li>纪录片</li>
+						<li>MV制作</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		 
+ 		<div class="content-bottom-div">
+			<span class="works-count">共发布1组作品</span>
+			<div class="works-top ">
+				<div class="layui-inline">
+					<label class="layui-form-label">发布时间:</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="test1" placeholder="选择时间">
+					</div>
+				</div>
+				<div class="layui-inline layui-form">
+					<label class="layui-form-label">发布人:</label>
+					<div class="layui-input-inline">
+						<select name="interest" lay-filter="aihao">
+							<option value="">选择人员</option>
+							<option value="0">写作</option>
+							<option value="1">阅读</option>
+							<option value="2">游戏</option>
+							<option value="3">音乐</option>
+							<option value="4">旅行</option>
+						</select>
+					</div>
+				</div>
+				<!-- 搜索动画 -->
+				<div class="search-div">
+					<!-- <img class="search-ico" src="__INDEX__/index/images/search.png" alt=""> -->
+					<div class="hidden-search">
+						<input class="search-input layui-input1" type="text" placeholder="标题/设计者"><img class="search-img" src="__INDEX__/index/images/search_movein.png" alt="">
+					</div>
+				</div>
+				
+			</div>
+			<div class="works-div-box">
+
+				<div class="item-box">
+					<div class="item-img">
+						<img src="__INDEX__/index/images/th (1).jpeg" alt="">
+					</div>
+					<div class="item-info">
+						<div class="item-info-left">
+							<img class="user-pic" src="__INDEX__/index/images/th (3).jpeg" alt="">
+							<span class="user-name">河冰</span>
+						</div>
+						<div class="item-info-right">
+							<div class="item-right-title">
+								<span>标题极简混搭</span><span class="item-price">￥12000</span>
+							</div>
+							<div class="item-record">
+								<span><img src="__INDEX__/index/images/browsedata.png" alt="">100</span>
+								<span><img src="__INDEX__/index/images/collectdata.png" alt="">100</span>
+								<span><img src="__INDEX__/index/images/commentdata.png" alt="">100</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-buttom">
+						<span class="change-content">修改</span>
+						<span class="delete-s">删除</span>
+						<span>著亨利 2018-04-30 发布</span>
+					</div>
+				</div>
+			</div>
+		</div>
+ 	</div>
+ 
+ </div>
+ 
+<script>
+var changetmsg = "{:url('index/test/changetmsg');}";  //修改
+var deletenotice = "{:url('index/test/deletenotice');}";  //删除提示弹窗
+var editworks = "{:url('index/test/editworks');}"; 			//修改编辑弹窗
+</script>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/works/worksmanage.js"></script>
+</body>
+</html>

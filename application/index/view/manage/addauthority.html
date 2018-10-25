@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加菜单弹窗</title>
+    <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="__PUBLIC__/static/index/css/manage/addauthority.css">
+</head>
+
+<body>
+    <div class="top-box" id="wrap">
+        <form class="layui-form" id="form" lay-filter="form">
+            <div class="content-div">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">父级权限：</label>
+                        <div class="layui-input-inline" style="width: 350px;">
+                            <select name="pid" lay-verify="required" lay-search>
+                                <option value="">请选择父级权限</option>
+                                <option value="0">一级菜单</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">权限名称：</label>
+                        <div class="layui-input-inline">
+                            <input name="menu_name" lay-verify="required" autocomplete="off" class="layui-input menuNameIpt" placeholder="请输入菜单名">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">控制器名：</label>
+                        <div class="layui-input-inline" style="width: 350px;">
+                            <select name="controller" lay-verify="required" lay-filter="control-name" lay-search>
+                                <option value="">请选择控制器名</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">方法：</label>
+                        <div class="layui-input-inline" style="width: 350px;">
+                            <select class="method-name" name="action" lay-verify="required" lay-search>
+                                <option  value="">选择方法</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">状态：</label>
+                        <div class="layui-input-inline" style="width: 350px;">
+                            <select name="state" lay-verify="required" lay-search>
+                                <option value="">选择状态</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">排序：</label>
+                        <div class="layui-input-inline">
+                            <input type="" name="order" lay-verify="required|number" autocomplete="off" class="layui-input" placeholder="请输入排序">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="layui-form-item" >
+                    <div class="buttom-box">
+                        <button class="quxiao"> 取消 </button>
+                        <button class="queren" lay-submit lay-filter="sub_btn">确定 </button>
+                    </div>
+                </div>
+        </form>
+
+
+    </div>
+
+</body>
+</html>
+
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/manage/addauthority.js"></script>
+

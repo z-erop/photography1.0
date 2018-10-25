@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="__PUBLIC__/static/index/css/login.css">
+    <title>登陆</title>
+</head>
+<body>
+    <div class="big-box">
+        <div class="login-title">欢迎登录xx管理系统</div>
+        <div class="login-box">
+            <div class="login-left">
+                <img src="__PUBLIC__/static/index/images/camera.png" alt="">
+            </div>
+            <div class="login-right">
+                <div class="logo-pic">logo</div>
+                <div class="form-box">
+                    <form action="" class="layui-form" method="POST">
+                        <div class="item-div">
+                            <img src="__PUBLIC__/static/index/images/username.png" alt="">
+                            <input type="text" name="username" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="item-input">
+                        </div>
+
+                        <div class="item-div">
+                            <img src="__PUBLIC__/static/index/images/password.png" alt="">
+                            <input type="password" name="pwd" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="item-input">
+                        </div>
+
+                        <div class="item-div">
+                            <img src="__PUBLIC__/static/index/images/validatecode.png" alt="">
+                            <input type="text" name="username" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="item-input reg-input">
+                            <span class="reg-pic">abds</span>
+                        </div>
+
+                        <div class="item-div">
+                            <button class="login-btn">登陆</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/login.js"></script>
+<script>
+var index="{:url('index/test/index');}";   //首页页面
+</script>
+</html>

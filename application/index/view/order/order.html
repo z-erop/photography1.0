@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>预约</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/order/order.css"/>
+</head>
+<style>
+.layui-form-select dl dd.layui-this{
+     background-color: #fcae14; 
+}
+.layui-laypage-molv{
+	width: 1200px;
+}
+</style>
+<body>
+ <!--导航部分-->
+ <!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 
+	<div class="works-top ">
+		<div class="layui-inline">
+			<label class="layui-form-label">预约时间:</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" id="test1" placeholder="选择时间">
+			</div>
+		</div>
+		<div class="layui-inline layui-form">
+			<label class="layui-form-label">联系状态:</label>
+			<div class="layui-input-inline">
+				<select name="interest" lay-filter="aihao">
+					<option value="">选择状态</option>
+					<option value="0">写作</option>
+					<option value="1">阅读</option>
+					<option value="2">游戏</option>
+					<option value="3">音乐</option>
+					<option value="4">旅行</option>
+				</select>
+			</div>
+		</div>
+		<!-- 搜索动画 -->
+		<div class="search-div">
+			<!-- <img class="search-ico" src="__INDEX__/index/images/search.png" alt=""> -->
+			<div class="hidden-search">
+				<input class="search-input layui-input1" type="text" placeholder="标题/设计者"><img class="search-img" src="__INDEX__/index/images/search_movein.png" alt="">
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="login-record">
+	 	<div class="table-div">
+			 <table class="layui-table" lay-skin="nob" id="demo" lay-filter="test"></table>
+	 	</div>
+	</div>
+ 
+ </div>
+ <!-- 联系状态 templet -->
+ <script type="text/html" id="contact_status">
+	{{#  if(d.status == "未联系"){ }}
+		   <div class="chose-c-s" style="color: #fcae14;">{{d.status}}</div>
+		   <div class="chose-ico" style="display:none;"> 
+			    <img lay-event="success_c" title="联系成功" class="success-ico" src="__INDEX__/index/images/success.png" alt="">
+				<img lay-event="fail_c" title="联系失败" class="fail-ico" src="__INDEX__/index/images/fail.png" alt="">	 
+			</div>
+  	{{#  } else if(d.status == "联系成功"){ }}
+	  	<div style="color:#000000;">{{d.status}}</div>
+  	{{#  } else{    }}
+	 	<div style="color: #e14545;">{{d.status}}</div>
+	{{#   }     }}
+</script>
+<script>
+var contactsuccess = "{:url('index/test/contactsuccess');}";  //联系成功弹窗
+var contactfail = "{:url('index/test/contactfail');}";  //联系失败弹窗
+</script>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/order/order.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

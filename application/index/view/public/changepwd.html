@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+</head>
+<style>
+    .div-box{
+        width: 706px;
+        height: 330px;
+        border: 0 0 1px 0;
+        position: absolute;
+        left: -5px;
+        box-shadow: 4px 2px 4px 0px 
+        rgba(0, 0, 0, 0.1);
+    }
+    .content-div{
+        width: 380px;
+        margin: 50px auto;
+    }
+    .content-div>span{
+        color: #666666;
+        display: block;
+        position: relative;
+        margin: 20px 0 5px 0;
+    }
+
+    .layui-input{
+        background-color: #f8f8f9;
+        border-radius: 5px;
+    	border: solid 1px #eeeeee;
+    }
+
+
+</style>
+<body>
+    <div class="div-box">
+        <div action="" class="layui-form content-div">
+            <span class="layui-form-item">  原密码： </span>
+            
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <div class="layui-input-inline" style="width:390px">
+                        <input type="password" name="phone" lay-verify="required" autocomplete="off" placeholder="请输入原密码" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+            <span class="layui-form-item"> 新密码： </span>
+            <div class="lyaui-form-item">
+                <div class="layui-inline">
+                    <div class="layui-input-inline" style="width:390px">
+                        <input type="password" name="phone" lay-verify="required|phone" autocomplete="off" placeholder="请输入新密码" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+            <span class="layui-form-item">  确认密码： </span>
+            <div class="lyaui-form-item">
+                <div class="layui-inline">
+                    <div class="layui-input-inline" style="width:390px">
+                            <input type="password" name="phone" lay-verify="required|phone" autocomplete="off" placeholder="请确认密码" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+  
+</body>
+</html>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script>
+layui.use(['layer', 'form','table','laydate'], function(){
+	var layer = layui.layer,
+	table = layui.table,
+	$ = layui.$,
+	laypage = layui.laypage,
+	laydate = layui.laydate,
+    form = layui.form;
+
+})
+</script>

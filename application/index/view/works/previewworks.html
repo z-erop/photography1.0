@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>预览</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__/static/index/css/works/previewworks.css">
+</head>
+
+<body>
+<div class="big-box">
+    <div class="left-div">
+        <img src="__INDEX__/index/images/ylbg04.jpg" alt="">
+        <img src="__INDEX__/index/images/zero01.jpg" alt="">
+        <img src="__INDEX__/index/images/ylbg01.jpg" alt="">
+        <img src="__INDEX__/index/images/ylbg02.jpg" alt="">
+        <img src="__INDEX__/index/images/ylbg03.jpg" alt="">
+       
+    </div>
+
+    <div class="right-div">
+        <div class="right-div1">
+            <span class="r-d-title">极简混搭风</span>
+            <span class="r-d-auth">策划师-何冰</span>
+            <div class="r-d-introduce">根据新人要求，取新娘名字里面的‘萍’做设计，从而联想起苹果，苹果属于蔷薇科植物，同时最适宜生长的地方位于河南的“灵”宝，新郎名字中有一个灵字，也暗喻新娘找到... <span>全文</span> </div>
+            <span class="r-d-price">￥56000</span>
+        </div>
+        <div class="right-div2">
+            <span class="r-d2-title">拍摄团队</span>
+            <div class="r-d2-team">
+                <img src="__INDEX__/index/images/th (3).jpeg" alt="">
+                <img src="__INDEX__/index/images/th (3).jpeg" alt="">
+                <img src="__INDEX__/index/images/th (3).jpeg" alt="">
+            </div>
+        </div>
+        <div class="right-div3">
+            <div class="r-d3-logo">logo</div>
+            <div class="r-d3-name">
+                <input type="text" placeholder="姓名">
+            </div>
+            <div class="r-d3-phone">
+                <input type="text" placeholder="电话">
+            </div>
+            <div class="r-d3-other">
+                <input type="text" placeholder="备注">
+            </div>
+            <div class="r-d3-btn">
+                <button class="limit-order">立即预约</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="btn-div">
+    <button class="queren-btn">确定</button>
+</div>
+ 
+
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+
+</body>
+</html>
+<script>
+layui.use(['layer', 'form','table','laydate','upload','rate'], function(){
+	var layer = layui.layer,
+	table = layui.table,
+	$ = layui.$,
+	laypage = layui.laypage,
+	laydate = layui.laydate,
+	upload = layui.upload,
+	rate = layui.rate,
+    form = layui.form;
+    
+    $('.queren-btn').on('click',function(){
+        var index = parent.layer.getFrameIndex(window.name); 
+        parent.layer.close(index); 
+    })
+})
+
+</script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>账号添加</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage_nav.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage/addaccount.css"/>
+</head>
+<style>
+
+.layui-table{
+    margin: -10px 0;
+}
+/* layui 复选框样式修改*/
+.layui-form-checked[lay-skin="primary"] i{
+    background-color: #fcae14;
+    border-color: #fcae14;
+}
+.layui-form-checkbox[lay-skin="primary"]:hover i{
+    border-color: #fcae14;
+}
+
+</style>
+<body>
+ <!--导航部分-->
+{include file="../application/index/view/Public/header.html" /}
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	{include file="../application/index/view/Public/manage_nav.html" /}
+    <!--左侧导航结束-->
+    
+ 	<div class="right-content">
+        <div class="r-content1">
+            <span> <a href="{:url('index/test/accountmanage');}">账号</a> </span>
+            <span><a style="color: #ff4d7d;" href="{:url('index/test/addaccount');}">添加账号</a></span>
+        </div>
+        <div class="r-content2 ">
+            <div class="r-content2-title">基础信息</div> 
+                <div class="r-content2-div layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" placeholder="请输入姓名">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <select name="quiz">
+                                    <option value="">选择性别</option>
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="layui-form-item ">
+                        <div class="layui-inline" >
+                            <div class="layui-input-inline" style="width:404px;">
+                                <select name="quiz">
+                                    <option value="">选择职务</option>
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item ">
+                        <div class="layui-inline" >
+                            <div class="layui-input-inline" style="width:404px;">
+                                <input type="text" class="layui-input" placeholder="输入电话号码">
+                            </div>
+                            <span class="pwd-notice">默认密码为手机号</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="r-content3 ">
+                <div class="r-content3-title">设置权限</div> 
+              
+                <div class="authority-box layui-form">
+                    <ul class="menu-box">
+                        <li class="menu-li1">
+                            <div class="li-div-s">
+                                <span class="li-span">
+                                    <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                    <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                </span>
+                            </div>
+                            
+                            <ul class="">
+                                <li class="menu-li1">
+                                    <div class="li-div-s">
+                                        <span class="li-span">
+                                            <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                            <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                        </span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="li-div-s">
+                                                <span class="li-span">
+                                                    <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                                    <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-li1">
+                                    <div class="li-div-s">
+                                        <span class="li-span">
+                                            <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                            <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="menu-li1">
+                                    <div class="li-div-s">
+                                        <span class="li-span">
+                                            <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                            <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                        </span>
+                                    </div>
+                                </li>      
+                            </ul>
+                        </li>
+                        <li class="menu-li1">
+                            <div class="li-div-s">
+                                <span class="li-span">
+                                    <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                    <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                </span>
+                            </div>
+                        </li>
+                        <li class="menu-li1">
+                            <div class="li-div-s">
+                                <span class="li-span">
+                                    <img class="trangle-ico" src="__INDEX__/index/images/down.png" alt="" >
+                                    <input type="checkbox" name="" title="设置权限" lay-skin="primary"> 
+                                </span>
+                            </div>
+                        </li>   
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="btn-div">
+                <button class="add-btn">添加</button>
+            </div>
+        </div>
+        
+ 
+ </div>
+<!-- templet 状态 -->
+ <script type="text/html" id="switch_stu">
+    <form class="layui-from" action="">
+        <input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="启用|禁用">
+    </form>
+</script>
+<!-- templet 修改 -->
+ <script type="text/html" id="change_m">
+     <span href="" layui-event="change_msg" style="color: #fcae14;">修改</span>
+ </script>
+
+
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/manage/addaccount.js"></script>
+</body>
+</html>

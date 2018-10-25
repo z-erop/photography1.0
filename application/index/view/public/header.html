@@ -1,0 +1,41 @@
+
+<!--导航部分-->
+<div class="header">
+    <div class="heder-box">
+        <div class="logo">logo</div>
+        <div class="nav-div-box">
+            <ul>
+                <li><a href="{:url('index/test/index');}">首页</a></li>
+                <li><a href="{:url('index/test/worksmanage');}">作品</a></li>
+                <li><a href="{:url('index/test/teammanage');}">团队</a></li>
+                <li><a href="{:url('index/test/order');}">预约</a></li>
+                <li><a href="{:url('index/test/usermanage');}">管理</a></li>
+            </ul>
+        </div>
+        <div class="user-div">
+            <img src="__INDEX__/lib/layui/images/face/30.gif" alt="" />
+            <span>admin</span>
+            <div class="user-info">
+                <ul>
+                    <li class="change-pwd">修改密码</li>
+                    <li class="exit">退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<style>
+.nav-active{
+    background-color: #333333;
+    color: #ff4d7d !important;
+}
+
+
+</style>
+<script>
+var changepwd = "{:url('index/test/changepwd');}";   //修改密码弹窗
+var login = "{:url('index/test/login');}";   //退出登陆
+</script>
+

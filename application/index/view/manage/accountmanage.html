@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>账号管理</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage_nav.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/manage/accountmanage.css"/>
+</head>
+<style>
+
+.layui-table{
+    margin: -10px 0;
+}
+</style>
+<body>
+ <!--导航部分-->
+<!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	{include file="../application/index/view/Public/manage_nav.html" /}
+    <!--左侧导航结束-->
+    
+ 	<div class="right-content">
+        <div class="r-content1">
+            <span> <a style="color: #ff4d7d;" href="{:url('index/test/accountmanage');}">账号</a> </span>
+            <span><a href="{:url('index/test/addaccount');}">添加账号</a></span>
+        </div>
+        <div class="r-content2 ">
+            <div class="works-top ">
+                <div class="search-div">
+                    <!-- <img class="search-ico" src="__INDEX__/index/images/search.png" alt=""> -->
+                    <div class="hidden-search">
+                        <input class="search-input layui-input1" type="text" placeholder="姓名/电话"><img class="search-img" src="__INDEX__/index/images/search_movein.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-table">
+                <table class="layui-table" lay-skin="nob" id="demo" lay-filter="table_test"></table>
+            </div>
+
+        </div>
+
+ 	</div>
+ 
+ </div>
+<!-- templet 状态 -->
+ <script type="text/html" id="switch_stu">
+    <form class="layui-from" action="">
+        <input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="启用|禁用">
+    </form>
+</script>
+<!-- templet 修改 -->
+ <script type="text/html" id="change_m">
+     <span href="" lay-event="change_msg" style="color: #fcae14;">修改</span>
+ </script>
+
+<script>
+var changeaccountmsg = "{:url('index/test/changeaccountmsg');}";  //修改信息弹窗
+
+
+</script>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/manage/accountmanage.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>修改</title>
+  <link rel="stylesheet" href="__PUBLIC__/static/lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/header.css"/>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/index/css/works/editworks.css"/>
+</head>
+<style>
+.layui-form-label{
+	font-size: 16px;
+}
+.layui-input{
+	background-color: #f8f8f9;
+	border-radius: 5px;
+}
+.layui-form-select dl dd.layui-this{
+     background-color: #fcae14; 
+}
+</style>
+<body>
+ <!--导航部分-->
+<!-- header start -->
+{include file="../application/index/view/Public/header.html" /}
+<!-- header end -->
+ <!--导航部分结束-->
+ 
+ <!--内容部分-->
+ <div class="content-div-box"> 
+ 	<!--左侧导航-->
+ 	<div class="left-nav">
+ 		<ul>
+ 			<li><a href="{:url('index/test/worksmanage');}">作品管理</a></li>
+ 			<li><a href="{:url('index/test/uploadworks');}">上传作品</a></li>
+ 		</ul>
+	 </div>
+	<!--左侧导航结束-->
+	<div class="right-content">
+		<div class="r-content1">
+			<span> <a style="color: #ff4d7d;" href="{:url('index/test/uploadworks');}">修改</a> </span>
+			<!-- <span><a href="{:url('index/test/worksdraft');}">草稿</a></span> -->
+		</div>
+		<div class="r-content2">
+			<div class="r-content2-title">作品信息</div> 
+			<div class="r-content2-div layui-form">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<select name="quiz">
+							<option value="">选择业务类型</option>
+							
+							</select>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<select name="quiz">
+							<option value="">选择作品类型</option>
+							
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item ">
+					<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入作品标题" class="layui-input">
+				</div>
+				<div class="layui-form-item ">
+					<textarea style="height:95px;padding-top:10px;font-size:14px;" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="作品内容说明" class="layui-input"></textarea>
+				</div>
+				<div class="layui-form-item ">
+					<div style="color: #666666;margin:30px 0 5px 0">金额：</div>
+					<div class="layui-inline">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入金额" class="layui-input layui-input-inline">
+						<span style="display:block;height:40px;line-height:40px;" class="layui-input-inline">元</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="r-content3 ">
+			<div class="r-content3-title">上传作品 <span style="font-size: 12px;color: #999999;position: relative;margin-left: 50px;">注：建议图片视频宽 880px，支持批量上传</span></div> 
+			<div class="picBox">
+				<div class="pic-item " id="add_pic">
+					<span>点击添加图片</span>
+				</div>
+
+			</div>
+			<div class="videoBox">
+				<div class="video-item" id="add_video">
+					<span>点击添加视频</span>
+				</div>
+			</div>
+		</div>
+		<div class="r-content4">
+			<div class="r-content2-title">人员</div> 
+			<div class="r-content4-div layui-form">
+				<div class="layui-form-item ">
+					<div style="color: #666666;margin:30px 0 5px 0">设计、创作者：</div>
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<select name="quiz">
+							<option value="">选择人员</option>
+							
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="layui-form-item ">
+					<div style="color: #666666;margin:30px 0 5px 0">团队：（可多选）</div>
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<select name="quiz" lay-filter="team-menmber">
+							<option value="">选择人员</option>
+							<option value="1">人员1号</option>
+							<option value="2">人员2号</option>
+							<option value="3">人员3号</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="team-member-div">
+					<!-- <span class="item-p">人员一号 <img class="item-i" src="__INDEX__/index/images/delet.png" alt=""> </span> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="r-content5 ">
+			<div class="r-content2-title">上传封面 <span style="font-size: 12px;color: #999999;position: relative;margin-left: 50px;"> 注：建议普通封面尺寸 310*280px（宽*高）或此倍数，杂志海报封面尺寸 300*450px（宽*高）或此倍数 </span></div> 
+		
+			<div class="picBox-f">
+				<div class="pic-item-f " id="add_feng">
+					<span>上传封面</span>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="btn-div">
+			<button class="cancel-btn">取消</button>
+			<button class="save-btn">保存</button>
+			<!-- <button class="save-draft">存草稿 </button> -->
+		</div>
+
+	</div>
+	
+ </div>
+ 
+<script>
+var releasenotice = "{:url('index/test/releasenotice');}";		//发布提示弹窗
+var worksmanage = "{:url('index/test/worksmanage');}";		//作品管理页面
+</script>
+<script src="__PUBLIC__/static/lib/layui/layui.js"></script>
+<script src="__PUBLIC__/static/index/js/public.js"></script>
+<script src="__PUBLIC__/static/index/js/works/editworks.js"></script>
+</body>
+</html>
