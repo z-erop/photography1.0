@@ -1,0 +1,238 @@
+.left-nav{
+    width: 181px;
+	height: 106px;
+	background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 30px 28px 0 0;
+    position: fixed;
+    top: 80px;
+}
+.left-nav ul{
+    width: 180px;
+    height: 106px;
+
+}
+.left-nav ul li{
+    height: 53px;
+    line-height: 53px;
+}
+.left-nav ul li:first-child{
+    border-radius: 5px 5px 0 0;
+}
+.left-nav ul li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.left-nav ul li a{
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    height: 28px;
+    border-left: 3px solid #ff4d7d;
+    line-height: 28px;
+}
+.right-content{
+    float: right;
+    width: 1000px;
+    /* border: 1px solid #eeeeee; */
+}
+
+
+.r-content1{
+    width: 1000px;
+	height: 54px;
+	background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 30px 0 0 0;
+    line-height: 54px;
+}
+.r-content1 span{
+    font-size: 16px;
+    color: #000000;
+    margin: 0 10px 0 30px;
+}
+.myinput-style{
+    background-color: #f8f8f9;
+	border-radius: 5px;
+}
+.r-content2{
+    width: 1000px;
+    background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 10px 0;
+}
+.r-content2-title,.r-content3-title{
+    height: 50px;
+    border-bottom: solid 1px #eeeeee;
+    line-height: 50px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.r-content2-div{
+    padding:20px 40px 0 40px;
+}
+.r-content3{
+    width: 1000px;
+    background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin:0 0 10px 0;
+    float: left;
+}
+
+.r-content4{
+    width: 1000px;
+	min-height: 260px;
+    background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 10px 0;
+    clear: both;
+}
+.r-content4-div{
+    padding: 0 30px;
+}
+.r-content5{
+    width: 1000px;
+	height: 280px;
+    background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 10px 0;
+}
+.btn-div{
+    clear: both;
+    margin: 10px 0 100px 0;
+}
+
+.btn-div button{
+    width: 150px;
+	height: 40px;
+	background-color: #ffffff;
+    border-radius: 3px;
+    border: solid 1px #666666;
+    margin: 0px 30px 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-div button:hover{
+    opacity: 0.71;
+}
+.btn-div button:nth-child(2){
+    border: solid 1px #ff4d7d;
+    background-color: #ff4d7d;
+    color: #ffffff;
+}
+.btn-div button:nth-child(3){
+    border: 0;
+    position: relative;
+    font-size: 16px;
+    color: #999999;
+    display: inline-block;
+    top: 10px;
+    width:50px;
+    background: none;
+}
+
+.notict-style{
+    position: absolute;
+    color: #666666;
+    font-size: 14px;
+    margin-top: 110px;
+    display: inline-block;
+    margin-left: 91px;
+}
+
+.team-member-div{
+    position: relative;
+    /* border: 1px solid skyblue; */
+    line-height: 30px;
+   
+}
+.item-p{
+    height: 30px;
+	background-color: #f7f7fd;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.item-i{
+    position: relative;
+    margin-left:10px;
+    margin-top: -2px; 
+    cursor: pointer;
+}
+
+/* 图片上传样式 */
+.picBox{
+    /* border: 1px solid #eeeeee; */
+    position: relative;
+    margin: 0px 0 0 20px;
+    float: left;
+    min-width: 980px;
+   
+}
+#add_pic ,.video-item,.pic-item-f {
+    width: 265px;
+	height: 184px;
+	/* background-color: #f8f8f9; */
+    border: solid 1px #eeeeee;
+    background-image: url('/static/index/images/add.png');
+    background-repeat:no-repeat;
+    background-position: center 55px; 
+}
+#add_pic>span ,.video-item>span ,.pic-item-f>span{
+    color: #666666;
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 100px;
+    cursor: pointer;
+}
+.pic-item{
+    width: 267px;
+    height: 186px;
+    float: left;
+    margin: 20px ;
+    position: relative;
+    cursor: pointer;
+}
+.layui-upload-img{
+    width:100%;
+    height: 100%;
+}
+/* 视频 */
+.videoBox{
+    min-width: 980px;
+    margin: 0px 0 0 20px;
+    float: left;
+}
+.video-item{
+    width: 267px;
+    height: 186px;
+    margin:0 20px 20px;
+    float: left;
+}
+
+/* 封面 */
+.picBox-f{
+    float: left;
+    min-height: 230px;
+}
+.pic-item-f{
+    width: 267px;
+    height: 186px;
+    float: left;
+    margin: 20px ;
+}
+.delete-pic{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}

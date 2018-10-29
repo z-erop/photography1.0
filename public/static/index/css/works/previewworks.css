@@ -1,0 +1,139 @@
+.big-box{
+    width: 1260px;
+    margin: 37px auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.left-div{
+    width: 880px;
+    min-height: 990px;
+    /* border: 1px solid #eeeeee; */
+    direction: flex;
+    flex-direction: column;
+}
+.left-div img{
+    width: 880px;
+    margin: 0 0 15px 0;
+}
+.right-div{
+    width: 270px;
+    min-height: 400px;
+    /* border: 1px solid grey; */
+}
+.right-div1{
+    width: 100%;
+    border-bottom: 1px #bebebe dashed;
+}
+.r-d-title{
+    font-size: 24px;
+    color: #000000;
+    display: block;
+}
+.r-d-auth{
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin: 20px 0;
+}
+.r-d-introduce{
+    color: #333333;
+    font-size: 14px;
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.r-d-introduce span{
+    color: #ff4d7d;
+}
+.r-d-price{
+    color: #ff4d7d;
+    font-size: 16px;
+    display: block;
+    margin: 20px 0 20px 0; 
+}
+.right-div2{
+    margin: 10px 0;
+}
+.r-d2-title{
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    margin: 0 0 20px; 
+}
+.r-d2-team{
+    width: 100%;
+    height: 50px;
+}
+.r-d2-team img{
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin: auto 20px auto 0; 
+}
+.right-div3{
+    width: 273px;
+	height: 357px;
+	background-color: #fffcfc;
+	box-shadow: 0px 1px 1px 0px 
+		rgba(0, 0, 0, 0.05);
+    border: solid 1px #fff4f4;
+    position: relative;
+    margin: 50px 0;
+}
+.right-div3 input{
+    width: 221px;
+	height: 43px;
+	background-color: #ffffff;
+    border: solid 1px #e6e4e4;
+    padding:0 0 0 10px; 
+}
+.r-d3-logo{
+    color: #333333;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 20px 0;
+}
+.r-d3-name,.r-d3-phone,.r-d3-other{
+    width: 100px;
+    text-align: center;
+    margin:20px 0 0 20px;
+    position: relative;
+}
+.r-d3-btn{
+    position: relative;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.limit-order{
+    width: 221px;
+	height: 43px;
+    background-color: #ff4d7d;
+    border: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btn-div{
+    width: 100%;
+    height: 86px;
+    line-height: 86px;
+	background-color: #ffffff;
+	box-shadow: 0px -2px 4px 0px 
+        rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.btn-div button{
+    width: 150px;
+    height: 40px;
+    border: 0;
+	background-color: #ff4d7d;
+    border-radius: 3px;
+    color: #ffffff;
+}

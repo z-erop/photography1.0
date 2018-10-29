@@ -1,0 +1,39 @@
+.left-nav{
+    width: 181px;
+	height: 265px;
+	background-color: #ffffff;
+	border-radius: 5px;
+    border: solid 1px #eeeeee;
+    margin: 30px 28px 0 0;
+    position: fixed;
+    top: 80px;
+}
+.left-nav ul{
+    width: 180px;
+    height: 106px;
+    position:absolute;
+}
+.left-nav ul li{
+    height: 53px;
+    line-height: 53px;
+    display: block;
+    cursor: pointer;
+}
+.left-nav ul li:hover{
+    background-color:#ff4d7d;
+}
+.left-nav ul li:first-child{
+    border-radius: 5px 5px 0 0;
+}
+.left-nav ul li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.left-nav ul li a{
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    height: 28px;
+    border-left: 3px solid #ff4d7d;
+    line-height: 28px;
+}

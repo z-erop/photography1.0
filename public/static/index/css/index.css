@@ -1,0 +1,87 @@
+
+.content-div-box1{
+	width: 1200px;
+	margin: 0 auto;
+	/*border: 1px solid grey;*/
+}
+.top-div-box{
+	/*border: 1px solid skyblue;*/
+	width: 1200px;
+	float: left;
+}
+.top-div-box>div{
+	width: 268px;
+	height: 164px;
+	border-radius: 5px;
+	border: solid 1px #eeeeee;
+	float: left;
+	background-color: #FFFFFF;
+	margin: 48px 0 40px 60px;
+}
+.top-div-box>div:nth-child(1){
+	margin-left: 0;
+}
+.item-tit{
+	color: #999999;
+	font-size: 14px;
+	margin: 20px;
+}
+.item-middle{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.item-buttom{
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+}
+.item-buttom>span{
+	color: #999999;
+	font-size: 14px;
+}
+.change-tol1{
+	background-color: #26c242;
+	color: #FFFFFF;
+	width: 45px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.change-tol2{
+	background-color:#fcae14;
+	color: #FFFFFF;
+	width: 45px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.change-tol3{
+	background-color: #e14545;
+	color: #FFFFFF;
+	width: 45px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.login-record{
+	clear: both;
+	width: 1200px;
+}
+.login-today{
+	font-size: 18px;
+	color: #6b7282;
+	margin: 10px;
+}
+#test1{
+	width: 120px;
+	font-size: 16px;
+	border: 0;
+	display: inline-block;
+	height: 21px;
+	line-height: 21px;
+	cursor: pointer;
+}
+.transform-img{
+	position:relative;
+	/* margin-left:10px; */
+	float: right;
+	top: 8px;
+}

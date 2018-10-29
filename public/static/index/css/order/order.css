@@ -1,0 +1,52 @@
+.works-top{
+    height: 40px;
+    line-height: 40px;
+    margin-left: -28px;
+    position: relative;
+    margin-top: 106px;
+    margin-bottom: 20px;
+}
+/* 搜索框 动态 */
+.search-div{
+    width: 175px; 
+    float: right;
+    height: 40px;
+    position: relative;
+    /* margin-top: 12px; */
+    overflow: hidden;
+}
+.search-ico{
+    float: right;
+    position: relative;
+    margin-top: 7px;
+    left: 0px;
+    /* display: none; */
+}
+.hidden-search{
+    width: 180px;
+    height: 48px;
+    /* left: 177px; */
+    position: relative;
+    /* display: none; */
+}
+.search-input{
+    width: 163px;
+    height: 32px;
+	background-color: #f8f8f9;
+	border-radius: 16px;
+    border: solid 1px #eeeeee;
+    padding-left: 10px;
+
+}
+.search-img{
+    position: relative;
+    margin: -80px 0px 0 146px; 
+    cursor: pointer;
+}
+/* 搜索框 动态 */
+
+.chose-ico img{
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
